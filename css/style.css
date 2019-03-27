@@ -1,0 +1,98 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-image: url("../images/r-b.jpg");
+	background-repeat: repeat;
+}
+
+	
+h1 {
+	font-size: 3em;
+	font-family: cursive;
+  text-align: center;
+  text-shadow: 0 0 10px #F00, 0 0 30px #00F;
+	color: #cccc;
+	text-transform: uppercase;
+	margin-top: 15px;
+}
+
+.card{
+	box-shadow: 0 13px 18px 0 cadetblue;;
+	transition: 0.3s;
+	width: 40%;
+	border-radius: 60px;
+	margin-top: 83px;
+	margin-left: 392px;
+	background-color: #f8f8f8ef;
+}
+
+.container {
+  padding: 20px 20px;
+  margin: 24px;
+}
+h2 {
+    text-align: center;
+}
+
+p {
+  animation: moveInRight 5s ease-in;
+  text-align: center;
+  font-size: 1em;
+}
+
+@keyframes moveInRight{
+	0% {
+		opacity: 0;
+		transform: translateX(100px):
+	}
+	80%{
+		
+		transform: translateX(-10px):
+	}
+	100%{
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+img {
+  width: 60%;
+  display: block;
+	margin: 0 auto;
+	padding: 24px;
+}
+
+#dad{
+	animation: pulse 3000ms;
+	animation-iteration-count: 10;
+}
+
+@keyframes pulse{
+	from{
+		transform: scale(0.5);
+		opacity: .8;
+	}
+	to{
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+@media (max-width: 767px) {
+	.card {
+    margin: 0 auto;
+    width: 90%; 
+	}
+	h1 {
+	font-size: 2.5em;
+	font-family: monospace;
+	}
+}
+footer {
+    color: #fff;
+    padding: 17px;
+    font-size: 0.8em;
+}
